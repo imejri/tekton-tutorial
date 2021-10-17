@@ -6,7 +6,7 @@ spec:
   type: git
   params:
     - name: url
-      value: https://github.com/redhat-scholars/tekton-tutorial-greeter
+      value: https://github.com/imejri/tekton-tutorial-greeter
     - name: revision
       value: master
 ---
@@ -19,6 +19,6 @@ spec:
   params:
     - name: url
       # use minikube internal registry
-      value: example.com/rhdevelopers/tekton-tutorial-greeter
+      value: doker.io/imejri/tekton-tutorial-greeter:latest
       # if you are on OpenShift, use OpenShift interal registry
       #value: "image-registry.openshift-image-registry.svc:5000/tektontutorial/greeter"
