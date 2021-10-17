@@ -26,6 +26,10 @@ spec:
     spec:
       containers:
       - name: demo-greeter
-        image: example.com/rhdevelopers/tekton-tutorial-greeter
+        image: docker.io/imejri/tekton-tutorial-greeter
         ports:
         - containerPort: 8080
+        resources:
+           limits:
+             cpu: "0.5"
+           requests: "0.2"
